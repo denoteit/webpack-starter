@@ -3,21 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
-    "start": "webpack-dev-server --config './webpack.config.js'",
+    "start": "webpack serve --config './webpack.config.js'",
     "build": "webpack",
     "watch": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^3.3.0",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.1",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "css-loader": "^7.1.2",
+    "sass": "^1.91.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.101.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
     "reset-css": "^5.0.1"
